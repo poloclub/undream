@@ -1,0 +1,63 @@
+<scene version="0.5.0">
+
+
+
+	<default name="spp" value="4096" />
+	<default name="resx" value="1500" />
+	<default name="resy" value="1000" />
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="12" />
+	</integrator>
+	<sensor type="perspective" id="camera" name="camera">
+		<string name="focal_length" value="50mm" />
+		<float name="principal_point_offset_x" value="0.000000" />
+		<float name="principal_point_offset_y" value="-0.000000" />
+		<float name="near_clip" value="0.100000" />
+		<float name="far_clip" value="1000.000000" />
+	
+		
+		<transform name="to_world">
+			<matrix value="-0.8387 -0.0285 -0.5439 25.18 -0.5446 0.0439 0.8375 -36.9 0.0 0.9986 -0.0523 2.48 0.0 0.0 0.0 1.0" />
+		</transform>
+		<sampler type="independent" name="sampler">
+			<integer name="sample_count" value="$spp" />
+		</sampler>
+		<film type="hdrfilm" name="film">
+			<integer name="width" value="$resx" />
+			<integer name="height" value="$resy" />
+		</film>
+	</sensor>
+
+	<shape type="rectangle" id="light" name="light">
+		<boolean name="flip_normals" value="true" />
+		<transform name="to_world">
+			<matrix value="30 0 0 0 0 30 0 0 0 0 1 20 0 0 0 1" />
+		</transform>
+		<emitter type="area" name="emitter">
+			<rgb value="0.897142 0.897142 0.897142" name="radiance" />
+		</emitter>
+		<bsdf type="null" name="bsdf" />
+	</shape>
+
+
+
+	<shape type="obj" id="plane" name="plane">
+		<string name="filename" value="E:\MitsubaProjects\city_bin\meshes\SM_Trashcan_A_01_small.OBJ" />
+		<boolean name="face_normals" value="true" />
+
+		<bsdf type="diffuse">
+			<texture type="bitmap" name="reflectance">
+				<string name="filename" value="E:\Unreal Projects\CitySample\Content\Fab\green_seq3_eps255_a20.png" />
+				<string name="wrap_mode" value="repeat" />
+			</texture>
+	    </bsdf>
+        <transform name="to_world">
+			<matrix value="1.0 0.0 0.0 0.0 0.0 -0.0 -1.0 0.0 0.0 1.0 -0.0 0.0 0.0 0.0 0.0 1.0" />
+		</transform>
+
+	</shape>
+
+
+
+</scene>

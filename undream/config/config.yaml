@@ -1,0 +1,44 @@
+object_position : {
+        "Location.X": -570.0,
+        "Location.Y": 20,
+        "Location.Z": 20,
+        "Rotation.X": 0.0,
+        "Rotation.Y": 0.0,
+        "Rotation.Z": 0,
+        "Scale.X": 1.0,
+        "Scale.Y": 1.0,
+        "Scale.Z": 1.0
+}
+target_json_path : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\target.json"
+object_position_json_path : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\pos_obj.json"
+mask_destination_folder : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\masks"
+sequence_xml_dir : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\xmls"
+sequence_label : "StaticSequence"
+mitsuba_scale : 2
+unreal_scale : 200
+camera_json_path : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\camera.json"
+original_scene_path: "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\plane.xml"
+num_frames : 150
+white_texture_path : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\random_noise.png"
+desired_texture_path : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\bin_eps5_a\random_noise.png1.png"
+eps_numerator : 5
+alpha_numerator : 1
+max_iter : 5
+batch_size : 10
+key : "plane.bsdf.reflectance.data"
+targeted : False
+obj_idx : 1
+destination_path : "/Game/Fab/"
+material_instance_name :  '/Engine/BasicShapes/BasicShapeMaterial_Inst.BasicShapeMaterial_Inst'
+updated_tex_img_prefix : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\plane"
+orig_texture : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\random_noise.png"
+unreal_rendered_imgs_path : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\rgb\\"
+mitsuba_files_path : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\xmls\\*"
+mitsuba_init_img_path : "C:\\Users\\mphute6\\Unreal\\MyProject\\Scripts\\UnDREAM\\sequences\\sequence_plane\\init_img.png"
+model_name : "detr"
+clip_min : 0.0
+clip_max : 1.0
+
+
+
+
