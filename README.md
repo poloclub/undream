@@ -1,10 +1,21 @@
 # UnDREAM: Bridging Differentiable Rendering and Photorealistic Simulation for End-to-end Adversarial Attacks
+[![arxiv badge](https://img.shields.io/badge/arXiv-2510.16923-red)](http://arxiv.org/abs/2510.16923)
+[![DOI:10.48550/arXiv.2510.16923](https://img.shields.io/badge/DOI-10.48550/arXiv.2510.16923-blue)](https://doi.org/10.48550/arXiv.2510.16923)
+
+
+
 
 <p align="center">
-    <img src="images/Slice 2-2.png" alt="drawing" width="40%"/>
+    <img src="images/Slice 2-2.png" alt="drawing" width="80%"/>
 </p>
 
 Deep learning models deployed in safety critical applications like autonomous driving use simulations to test their robustness against adversarial attacks in realistic conditions. However, these simulations are non-differentiable, forcing researchers to create attacks that do not integrate simulation environmental factors, reducing attack success. To address this limitation, we introduce UnDREAM, the first software framework that bridges the gap between photorealistic simulators and differentiable renderers to enable end-to-end optimization of adversarial perturbations on any 3D objects. UnDREAM enables manipulation of the environment by offering complete control over weather, lighting, backgrounds, camera angles, trajectories, and realistic human and object movements, thereby allowing the creation of diverse scenes. We showcase a wide array of distinct physically plausible adversarial objects that UnDREAM enables researchers to swiftly explore in different configurable environments. This combination of photorealistic simulation and differentiable optimization opens new avenues for advancing research of physical adversarial attacks.
+
+For more information, check out our manuscript:
+
+[**Differentiable Rendering Powered End-to-End Adversarial Attack Evaluation**](https://arxiv.org/abs/2510.16923).
+Mansi Phute, Matthew Hull, Haoran Wang, Alec Helbling, ShengYun Peng, Willian Lunardi, Martin Andreoni, Wenke Lee, Duen Horng Chau.
+*PAKDD, 2026.*
 
 
 ## Getting Started
@@ -43,3 +54,14 @@ then run
 
 ```python3 attack_pipeline.py```
 
+## Citation
+
+```bibTeX
+@article{phute2026undream,
+  title = {Differentiable Rendering Powered End-to-End Adversarial Attack Evaluation},
+  author = {Phute, Mansi and Hull, Matthew and Wang, Haoran and Helbling, Alec and Peng, ShengYun and Lunardi, Willian and Andreoni, Martin and Lee, Wenke and Chau, Duen Horng},
+  journal={PAKDD},
+  year={2026},
+  publisher={Springer}
+}
+```
